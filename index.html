@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <header>
+        <h2 id="main-heading">Placement Survival Machine</h2>
+        <p>Practice interview questions with one click.</p>
+    </header>
+
+<main>
+    <div class="categories">
+        <label for="category" class="label">Choose Category</label>
+        <select id="category">
+            <option value="">Select a Category </option>
+            <option value="hr">HR</option>
+            <option value="javascript">JavaScript</option>
+            <option value="dsa">DSA</option>
+            <option value="oop">OOP</option>
+            <option value="dbms">DBMS</option>
+            <option value="os">OS</option>
+        </select>
+
+        <label for="number" class="label">Choose Number of Question</label>
+        <select id="number">
+            <option value="">Select a Number</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+    </div>
+
+    <div class="question-card">
+        
+        <p id="question-text">Your interview question will appear here.</p>
+        <p id="answer-text" class="hidden"></p>
+
+        <div class="action-buttons">
+            <button id="show-answer">Show Answer</button>
+            <button id="next-question">Next Question</button>
+            <button id="mark-practiced">Mark Practiced</button>
+        </div>
+    </div>
+
+    <div class="stats">
+        <p>Questions Practiced: <span id="practiced-count">0</span></p>
+    </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
