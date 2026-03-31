@@ -81,12 +81,13 @@ main {
     box-shadow: 0 0 0 2px #38bdf8;
 }
 
+/* 
 #category:hover {
     border-color: rgb(124, 58, 237);
-    /* transform: scale(1.03); */
-}
+    transform: scale(1.03);
+} */
 
-#category:focus {
+#category:focus , #number:focus {
     border-color: #00c3ff;
     box-shadow: 0 0 12px rgba(124, 58, 237, 0.6);
 }
@@ -153,16 +154,23 @@ main {
 }
 
 /* Individual Button Colors */
+#show-question {
+    background: linear-gradient(135deg, #a706d4, #3bc4f6);
+}
+
 #show-answer {
     background: linear-gradient(135deg, #06b6d4, #3b82f6);
+    display: none;
 }
 
 #next-question {
     background: linear-gradient(135deg, #8b5cf6, #6366f1);
+    display: none;
 }
 
 #mark-practiced {
     background: linear-gradient(135deg, #10b981, #22c55e);
+    display: none;
 }
 
 /* Hover Effects */
